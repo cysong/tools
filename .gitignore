@@ -1,0 +1,4 @@
+/venv/
+/.idea/
+/daily_tools.iml
+/utils/db_report/payment.yml

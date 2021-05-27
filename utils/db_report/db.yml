@@ -1,0 +1,10 @@
+# -----------------压测环境数据库-----------------
+- Schema: FinExchange
+  DB_User: test
+  DB_Password: test
+  DB_IP: 1.1.1.1:6309/FinExchange
+
+- Schema: Fxpayout
+  DB_User: test
+  DB_Password: test
+  DB_IP: 1.1.1.1:6309/Fxpayout
