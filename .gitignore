@@ -2,3 +2,4 @@
 /.idea/
 /daily_tools.iml
 /utils/db_report/payment.yml
+/utils/db_report/db_report_*
