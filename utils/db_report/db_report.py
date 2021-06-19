@@ -4,6 +4,8 @@ import mysql.connector
 import openpyxl
 from datetime import datetime
 
+from utils.utils.excel import write_sheet
+
 config = 'db.yml'
 out_file = 'db_report_'
 ymlFile = open(config, encoding='UTF8', mode='r')
@@ -63,15 +65,6 @@ def write_excel(tables, columns):
     write_sheet(sheet, c_headers, columns)
 
     workbook.save(excel_path)
-
-
-def write_sheet(sheet, headers, content):
-    for i in range(0, len(headers)):
-        sheet.cell(row=1, column=i + 1, value=str(headers[i]))
-
-    for i in range(0, len(content)):
-        for j in range(0, len(content[i])):
-            sheet.cell(row=i + 2, column=j + 1, value=content[i][j])
 
 
 def main():
