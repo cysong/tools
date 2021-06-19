@@ -4,7 +4,7 @@ import mysql.connector
 import openpyxl
 from datetime import datetime
 
-from utils.utils.excel import write_sheet
+from document.utils.excel import write_sheet
 
 config = 'db.yml'
 out_file = 'db_report_'

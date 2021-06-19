@@ -6,7 +6,7 @@ from datetime import datetime
 
 import openpyxl
 
-from utils.utils.excel import write_sheet
+from document.utils.excel import write_sheet
 
 node_map = {}
 root_id = None
@@ -107,7 +107,7 @@ def write_excel(path, headers, rows):
     workbook.save(path)
 
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
     # 创建一个 XMLReader
     parser = xml.sax.make_parser()
     # turn off namepsaces
